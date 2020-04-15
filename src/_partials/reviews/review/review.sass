@@ -1,0 +1,48 @@
+// review styles
+.review
+  position: relative
+  padding-top: 70px
+  text-align: center
+
+  &::before
+    content: '“'
+    position: absolute
+    top: 0
+    left: calc(50% - 20px)
+    width: 40px
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    font-family: $secondary-font
+    font-size: 100px
+    font-weight: 400
+    line-height: normal
+    opacity: .9
+
+  &__message
+    font-family: $secondary-font
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+    color: #ffffff
+    opacity: .85
+    user-select: none
+
+  &__author
+    padding-top: 50px
+    font-size: 14px
+    font-weight: 900
+    line-height: 22px
+    text-transform: uppercase
+    color: #ffffff
+    user-select: none
+
+  &__description
+    font-size: 13px
+    font-weight: 300
+    line-height: 22px
+    text-transform: uppercase
+    color: #ffffff
+    opacity: .7
+    user-select: none

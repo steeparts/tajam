@@ -1,0 +1,40 @@
+include ../../_partials/site-logo/site-logo
+include ../../_partials/subscribe/subscribe
+include ../../_partials/socials/socials
+include ../../_partials/navbar/navbar
+include ../../_partials/copyright/copyright
+
+mixin footer()
+  footer.footer
+    .container
+      .footer__inner
+        .footer__group
+          .footer__column
+            +site-logo
+          .footer__column
+            .footer__title Our studio
+          .footer__column
+            .footer__title Stay in touch
+
+        .footer__group
+          .footer__column
+            .footer__text.
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit.
+              Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+          .footer__column
+            ul.footer__contacts
+              li
+                i.fa.fa-map-marker
+                span.footer__text.
+                  Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+              li
+                i.fa.fa-phone
+                span.footer__text (+62) 21-2224 3333
+          .footer__column
+            .footer__social
+              +subscribe
+              +socials
+
+        .footer__group.footer__group--pressed
+          +navbar(site.data.navbar.footer, false)
+          +copyright

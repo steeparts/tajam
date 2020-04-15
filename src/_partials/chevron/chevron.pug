@@ -1,0 +1,4 @@
+mixin chevron(props)
+  - props = props || {}
+
+  span.chevron(class= props.dir ? `chevron--${props.dir}` : '')

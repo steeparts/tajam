@@ -1,0 +1,66 @@
+[
+  {
+    "type": "section-greeting",
+    "params": {
+      "id": "home",
+      "classList": "section--home section--fullheight",
+      "container": true
+    }
+  },
+  {
+    "type": "section-our-story",
+    "params": {
+      "id": "about",
+      "classList": null,
+      "container": true
+    }
+  },
+  {
+    "type": "section-video",
+    "params": {
+      "id": null,
+      "classList": "section--video",
+      "container": true
+    }
+  },
+  {
+    "type": "section-expertise",
+    "params": {
+      "id": "expertise",
+      "classList": null,
+      "container": true
+    }
+  },
+  {
+    "type": "section-team",
+    "params": {
+      "id": "teams",
+      "classList": "section--team",
+      "container": true
+    }
+  },
+  {
+    "type": "section-portfolio",
+    "params": {
+      "id": "works",
+      "classList": null,
+      "container": false
+    }
+  },
+  {
+    "type": "section-reviews",
+    "params": {
+      "id": "reviews",
+      "classList": "section--reviews",
+      "container": true
+    }
+  },
+  {
+    "type": "section-contact",
+    "params": {
+      "id": "contact",
+      "classList": null,
+      "container": true
+    }
+  }
+]

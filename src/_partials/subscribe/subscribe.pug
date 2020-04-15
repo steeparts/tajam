@@ -1,0 +1,13 @@
+include ../form/form
+
+mixin subscribe()
+  .subscribe
+    +form.subscribe__form(method='post')
+      +input(
+        type='text',
+        name='name',
+        placeholder='Subscribe our newsletter',
+        autocomplete='off'
+      )
+      button.button.subscribe__button(type='submit')
+        i.fa.fa-paper-plane-o

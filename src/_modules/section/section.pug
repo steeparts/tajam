@@ -1,0 +1,18 @@
+include greeting/greeting
+include our-story/our-story
+include video/video
+include expertise/expertise
+include team/team
+include portfolio/portfolio
+include reviews/reviews
+include contact/contact
+
+mixin section(type, params)
+  - params = params || {}
+
+  section.section(id= params.id, class= params.classList)
+    if params.container
+      .container
+        .section__inner.wow.flipInX: +#{type}
+    else
+      .section__inner.wow.flipInX: +#{type}

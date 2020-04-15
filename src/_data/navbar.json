@@ -1,0 +1,46 @@
+{
+  "header": [
+    {
+      "title": "Home",
+      "href": "#home"
+    },
+    {
+      "title": "About",
+      "href": "#about"
+    },
+    {
+      "title": "Expertise",
+      "href": "#expertise"
+    },
+    {
+      "title": "Teams",
+      "href": "#teams"
+    },
+    {
+      "title": "Works",
+      "href": "#works"
+    },
+    {
+      "title": "People say",
+      "href": "#reviews"
+    },
+    {
+      "title": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "footer": [
+    {
+      "title": "Help",
+      "href": "#"
+    },
+    {
+      "title": "Terms & condition",
+      "href": "#"
+    },
+    {
+      "title": "Privacy",
+      "href": "#"
+    }
+  ]
+}

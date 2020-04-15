@@ -1,0 +1,8 @@
+mixin team-person(props)
+  - props = props || {}
+
+  li.team-person&attributes(attributes)
+    .team-person__image
+    .team-person__data
+      .team-person__name= props.name
+      .team-person__role= props.role

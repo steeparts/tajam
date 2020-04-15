@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "images/expertise-services/01.png",
+    "title": "Web design & development",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  },
+  {
+    "icon": "images/expertise-services/02.png",
+    "title": "Branding identity",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  },
+  {
+    "icon": "images/expertise-services/03.png",
+    "title": "Mobile app",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  },
+  {
+    "icon": "images/expertise-services/04.png",
+    "title": "Search engine optimization",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  },
+  {
+    "icon": "images/expertise-services/05.png",
+    "title": "Game development",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  },
+  {
+    "icon": "images/expertise-services/06.png",
+    "title": "Made with love",
+    "description": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+  }
+]

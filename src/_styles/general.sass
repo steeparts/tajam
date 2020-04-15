@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  outline: none
+
+html, body
+  height: 100%
+
+html
+  -webkit-tap-highlight-color: transparent
+
+body
+  min-width: 320px
+  font-family: $primary-font
+  font-weight: 300
+  background-color: #ffffff
+
+.no-scroll
+  overflow: hidden
+
+a, .link
+  text-decoration: none
+  color: $dark-color
+
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+iframe
+  border: 0 none
+  max-width: 100%
+
+.block-header
+  text-align: center
+  position: relative
+  padding-bottom: 20px
+  margin-bottom: 45px
+
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    width: 50px
+    height: 2px
+    margin: 0 auto
+    background-color: $dark-color
+    opacity: .3
+
+.block-title
+  margin: 0
+  font-family: $secondary-font
+  font-weight: 700
+  font-size: 22px
+  color: $dark-color
+  text-transform: uppercase
+
+.block-description
+  margin-top: 15px
+  font-family: $secondary-font
+  font-size: 14px
+  font-weight: 400
+  line-height: 25px
+  color: #2f2d35
+  opacity: .75
+
+.text-center
+  text-align: center
+
+.hidden
+  display: none !important
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  width: 100%
+  position: relative
+  overflow: hidden
+
+.main
+  flex: 1 0 auto
+
+.container
+  width: 100%
+  max-width: 940px
+  height: 100%
+  margin: auto
+  padding: 0 20px

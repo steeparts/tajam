@@ -1,0 +1,45 @@
+// expertise styles
+.expertise
+  &__services
+    display: flex
+    flex-wrap: wrap
+
+  &__service
+    text-align: center
+    padding: 30px 30px 40px
+
+    @include desktop
+      flex-basis: calc(100% / 3)
+      border-right: 1px solid rgba(0, 0, 0, .1)
+      border-bottom: 1px solid rgba(0, 0, 0, .1)
+
+      &:nth-child(3n)
+        border-right: 0 none
+
+      &:nth-last-child(-n + 3)
+        border-bottom: 0 none
+
+    @include mobile
+      flex-basis: 100%
+
+      &:not(:last-child)
+        border-bottom: 1px solid rgba(0, 0, 0, .1)
+
+  &__service-icon
+    width: 50px
+    height: 50px
+    margin: 0 auto 35px
+
+  &__service-title
+    font-size: 14px
+    font-weight: 900
+    text-transform: uppercase
+    color: $dark-color
+    margin-bottom: 25px
+
+  &__service-description
+    font-size: 14px
+    font-weight: 300
+    line-height: 22px
+    color: $secondary-color
+    opacity: .75

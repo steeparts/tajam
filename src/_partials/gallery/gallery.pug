@@ -1,0 +1,7 @@
+mixin gallery(items)
+  - items = items || {}
+
+  .gallery
+    each item in items
+      a.gallery__item(href= item.link)
+        img.gallery__photo(src= item.image, alt='Example')

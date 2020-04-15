@@ -1,0 +1,15 @@
+{
+  "minify": true,
+  "options": [
+    "domPrefixes",
+    "prefixes",
+    "hasEvent",
+    "mq",
+    "prefixedCSSValue",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "css/flexbox",
+    "css/flexboxlegacy"
+  ]
+}

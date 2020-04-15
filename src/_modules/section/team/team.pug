@@ -1,0 +1,14 @@
+include ../../../_partials/team-person/team-person
+
+mixin section-team()
+  .team
+    .block-header.team__header.wow.flipInX
+      h3.block-title Meet our amazing team
+      .block-description Lorem ipsum dolor sit amet proin gravida nibh vel velit
+    ul.team__list
+      each person, index in site.data.team_list
+        - animateClasses = index % 2 ? 'fadeInLeft' : 'fadeInRight'
+        +team-person(person).team__list-item.wow(class= animateClasses)
+    .team__slogan Become part of our dream team, let’s join us !
+    .text-center
+      a.button.button--primary.wow.flipInY(href='#') We are hiring

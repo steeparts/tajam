@@ -1,0 +1,26 @@
+// button styles
+.button
+  background: none
+  border: 0 none
+  padding: 0
+  cursor: pointer
+  color: inherit
+
+  &--primary
+    border: 1px solid $accent-color
+    border-radius: 2px
+    font-family: $tertiary-font
+    color: $accent-color
+    text-transform: uppercase
+    padding: 14px
+    letter-spacing: .04em
+    min-width: 140px
+    height: 45px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    transition: .3s
+
+    &:hover
+      background-color: $accent-color
+      color: #ffffff

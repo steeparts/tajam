@@ -1,0 +1,12 @@
+include review/review
+include preview/preview
+
+mixin reviews(data)
+  - data = data || {}
+  .reviews
+    .reviews__list
+      each item in data
+        +review(item).reviews__item
+    .reviews__thumbnails
+      each item in data
+        +preview(item)

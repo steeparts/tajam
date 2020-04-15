@@ -1,0 +1,27 @@
+// team styles
+.team
+  &__header .block-title,
+  &__header .block-description
+    color: #ffffff
+
+  &__header::after
+    background-color: #ffffff
+    opacity: .2
+
+  &__list
+    display: flex
+
+    @include mobile
+      flex-wrap: wrap
+      justify-content: space-between
+
+    @include smallscreen
+      flex-direction: column
+      align-items: center
+
+  &__slogan
+    margin: 70px 0 30px
+    font-size: 14px
+    font-weight: 300
+    text-align: center
+    color: #f3f3f3

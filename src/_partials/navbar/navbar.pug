@@ -1,0 +1,13 @@
+mixin navbar(links, hasBurger)
+  - links = links || {}
+
+  nav.navbar&attributes(attributes)
+    if hasBurger
+      .navbar__burger
+        i.fa.fa-bars
+    ul.navbar__menu
+      each link in links
+        li.navbar__item
+          a(href= link.href).navbar__link= link.title
+    if hasBurger
+      .navbar__backdrop

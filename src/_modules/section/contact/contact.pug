@@ -1,0 +1,12 @@
+include ../../../_partials/form/form
+
+mixin section-contact()
+  .contact
+    .text-center
+      h3.block-title Give us a good news
+    +form.contact__form(method='post')
+      +input(type='text', name='name', placeholder='Name')
+      +input(type='text', name='email', placeholder='Email')
+      +input(type='text', name='subject', placeholder='Subject')
+      +textarea(type='text', name='message', placeholder='Your message')
+      button.button.button--primary.wow.flipInY(type='submit') Submit

@@ -1,0 +1,44 @@
+@import greeting/greeting
+@import our-story/our-story
+@import video/video
+@import expertise/expertise
+@import team/team
+@import portfolio/portfolio
+@import contact/contact
+
+.section
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  position: relative
+
+  &--home
+    background-image: url(../images/section/home.jpg)
+
+  &--video
+    background-image: url(../images/section/video.jpg)
+
+  &--team
+    background-image: url(../images/section/team.jpg)
+
+  &--reviews
+    background-image: url(../images/section/reviews.jpg)
+
+  &--home, &--video, &--team, &--reviews
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-image: $gradient
+
+  &--fullheight
+    height: 100vh
+
+  &__inner
+    height: 100%
+    overflow: hidden
+    position: relative
+    padding: 70px 0

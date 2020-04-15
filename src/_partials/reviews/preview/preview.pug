@@ -1,0 +1,5 @@
+mixin preview(data)
+  - data = data || {}
+
+  .preview
+    img.preview__photo(src= data.avatar, alt= data.author)

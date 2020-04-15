@@ -1,0 +1,44 @@
+// team-person styles
+.team-person
+  border: 1px solid rgba(255, 255, 255, .5)
+
+  @include desktop
+    width: 220px
+
+  @include mobile
+    width: 49%
+    margin-bottom: 20px
+
+  @include smallscreen
+    width: 220px
+
+  &:not(:last-child)
+    @include desktop
+      margin-right: 20px
+
+  &__image
+    background-color: #ffffff
+    height: 240px
+    overflow: hidden
+
+  &__photo
+    height: 100%
+    width: auto
+    max-width: 100%
+
+  &__data
+    padding: 20px
+    text-align: center
+    text-transform: uppercase
+    line-height: 20px
+
+  &__name
+    font-size: 14px
+    font-weight: 900
+    color: #ffffff
+
+  &__role
+    font-size: 13px
+    font-weight: 300
+    color: #fafafa
+    opacity: .7

@@ -1,0 +1,9 @@
+include ../../_partials/site-logo/site-logo
+include ../../_partials/navbar/navbar
+
+mixin header()
+  header.header&attributes(attributes)
+    .container
+      .header__group
+        .header__logo.wow.fadeInLeft: +site-logo
+        .header__navbar.wow.fadeInRight: +navbar(site.data.navbar.header, true)

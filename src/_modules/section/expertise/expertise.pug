@@ -1,0 +1,12 @@
+mixin section-expertise()
+  .expertise
+    .block-header.expertise__header.wow.flipInX
+      h3.block-title Expertise
+      .block-description Lorem ipsum dolor sit amet proin gravida nibh vel velit
+    .expertise__services
+      each service, index in site.data.expertise_services
+        - animateClasses = index % 2 ? 'bounceInLeft' : 'bounceInRight'
+        .expertise__service.wow(class= animateClasses)
+          .expertise__service-icon: img(src= service.icon, alt= service.title)
+          .expertise__service-title= service.title
+          .expertise__service-description= service.description

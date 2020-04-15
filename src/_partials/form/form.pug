@@ -1,0 +1,12 @@
+mixin input()
+  .form__control.input
+    input.input__field&attributes(attributes)
+
+mixin textarea()
+  .form__control.textarea
+    textarea.textarea__field&attributes(attributes)
+
+mixin form()
+  form.form&attributes(attributes)
+    if block
+      block

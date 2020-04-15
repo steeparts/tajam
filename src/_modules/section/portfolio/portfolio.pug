@@ -1,0 +1,14 @@
+include ../../../_partials/chevron/chevron
+include ../../../_partials/gallery/gallery
+
+mixin section-portfolio()
+  .portfolio
+    .container
+      .portfolio__header
+        h3.block-title.portfolio__title Our works
+        a.link(href='#')
+          span See All Project in dribble
+          +chevron({"dir": "right"})
+    .portfolio__items: +gallery(site.data.portfolio_items)
+    .text-center
+      a.button.button--primary.wow.flipInY(href='#') Load more

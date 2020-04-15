@@ -1,0 +1,70 @@
+// modal styles
+.modal
+  &__overlay, &__container
+    opacity: 0
+    z-index: -1
+
+  &--open &__overlay,
+  &--open &__container
+    opacity: 1
+    z-index: 2020
+
+  &--hidden &__overlay,
+  &--hidden &__container
+    opacity: 1
+    z-index: 2020
+
+  &--open &__overlay
+    background-color: rgba(0, 0, 0, .6)
+
+  &--open &__container
+    transform: translateY(0)
+
+  &--hidden &__overlay
+    background-color: rgba(0, 0, 0, 0)
+
+  &--hidden &__container
+    transform: translateY(-100px)
+
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0)
+    display: flex
+    justify-content: center
+    overflow: auto
+    cursor: pointer
+    transition: background .3s ease-in
+
+  &__container
+    width: fit-content
+    max-width: calc(100% - 40px)
+    height: fit-content
+    margin: 70px auto
+    position: relative
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16)
+    background-color: #ffffff
+    color: $primary-color
+    cursor: initial
+    transform: translateY(-100px)
+    transition: transform .3s ease-in
+
+  &__header
+    position: relative
+
+  &__close
+    position: absolute
+    right: 0
+    font-family: $secondary-font
+    font-size: 30px
+    font-weight: 900
+    color: #ffffff
+    margin-top: -35px
+    cursor: pointer
+
+  &__content
+    display: flex
+    flex-direction: column

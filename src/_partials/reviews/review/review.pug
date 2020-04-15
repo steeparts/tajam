@@ -1,0 +1,7 @@
+mixin review(data)
+  - data = data || {}
+
+  .review&attributes(attributes)
+    .review__message= data.message
+    .review__author= data.author
+    .review__description= data.description

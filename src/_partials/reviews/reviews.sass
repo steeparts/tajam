@@ -1,0 +1,32 @@
+@import review/review
+@import preview/preview
+
+// reviews styles
+.reviews
+  color: #ffffff
+  width: 100%
+  max-width: 740px
+  margin: 0 auto
+  overflow: hidden
+
+  &__list
+    display: flex
+    flex-wrap: nowrap
+
+    .no-js &
+      padding-bottom: 30px
+      overflow-x: auto
+
+  &__item:not(.tns-item)
+    min-width: 100%
+    max-width: 100%
+
+  &__thumbnails
+    height: 70px
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .no-js &
+      display: none

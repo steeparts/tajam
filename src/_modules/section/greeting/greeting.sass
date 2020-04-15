@@ -1,0 +1,33 @@
+// greeting styles
+.greeting
+  width: 100%
+  max-width: 710px
+  height: 100%
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+
+  &__header
+    padding-bottom: 25px
+    margin-bottom: 30px
+
+    &::after
+      height: 1px
+      background-color: $accent-color
+      opacity: 1
+
+  &__title
+    font-size: 32px
+    font-weight: 900
+    color: #ffffff
+    text-transform: capitalize
+
+  &__message
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-bottom: 50px
+    color: #ffffff

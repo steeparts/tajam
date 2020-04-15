@@ -1,0 +1,12 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Tajam",
+      "htmlOption": "pug",
+      "cssOption": "sass",
+      "sassSyntax": "sass",
+      "testFramework": "none"
+    },
+    "version": "3.1.2"
+  }
+}
